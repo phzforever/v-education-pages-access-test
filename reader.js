@@ -10,7 +10,7 @@ function render() {
   notice.classList.toggle('demo', r.mode === 'demo');
   notice.textContent = r.mode === 'demo'
     ? '功能演示：全部事件和来源均为虚构样例，仅用于测试热点榜与日报。榜单固定回放，不代表真实热点。'
-    : '公开阅读测试：真实来源的采集样本，尚未完成模型双评分。关键词线索需核验原文；内容更新以快照时间为准。';
+    : '公开阅读测试：真实来源内容经模型筛选和摘要整理。关键词线索需核验原文；内容更新以快照时间为准。';
   document.getElementById('updated').textContent = `内容快照：${date(snapshot.exportedAt, true)}（北京时间）`;
   for (const a of document.querySelectorAll('[data-nav]')) {
     a.href = route(a.dataset.nav, r.mode);
