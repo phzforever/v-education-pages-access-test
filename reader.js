@@ -1,4 +1,4 @@
-import { parseRoute, route, renderPage, date } from './render.js';
+import { parseRoute, route, renderPage, date } from './render.js?v=20261001-model-round';
 
 const app = document.getElementById('app');
 const notice = document.getElementById('notice');
